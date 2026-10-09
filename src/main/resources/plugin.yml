@@ -1,0 +1,179 @@
+name: ShadowSMP
+version: '${projectVersion}'
+main: com.shadowsmp.ShadowSMP
+api-version: '1.21'
+description: All-in-one Paper plugin for ShadowSMP
+author: zulnorainzulfi-hub
+softdepend: [LuckPerms, Vault, PlaceholderAPI]
+commands:
+  shadow:
+    description: ShadowSMP main command.
+    usage: /shadow [info|reload]
+    permission: shadowsmp.command.shadow
+  spawn:
+    description: Teleport to the server spawn.
+    usage: /spawn
+    permission: shadowsmp.command.spawn
+  setspawn:
+    description: Set the server spawn.
+    usage: /setspawn
+    permission: shadowsmp.command.setspawn
+  home:
+    description: Teleport to a home.
+    usage: /home [name]
+    permission: shadowsmp.command.home
+  sethome:
+    description: Set a home.
+    usage: /sethome [name]
+    permission: shadowsmp.command.sethome
+  tpa:
+    description: Send a teleport request.
+    usage: /tpa <player>
+    permission: shadowsmp.command.tpa
+  tpaccept:
+    description: Accept a teleport request.
+    usage: /tpaccept
+    permission: shadowsmp.command.tpaccept
+  msg:
+    description: Send a direct message.
+    usage: /msg <player> <message...>
+    permission: shadowsmp.command.msg
+  r:
+    description: Reply to the last player who messaged you.
+    usage: /r <message...>
+    permission: shadowsmp.command.r
+  fly:
+    description: Toggle fly mode.
+    usage: /fly [player]
+    permission: shadowsmp.command.fly
+  vanish:
+    description: Toggle vanish mode.
+    usage: /vanish [player]
+    permission: shadowsmp.command.vanish
+  heal:
+    description: Heal yourself or another player.
+    usage: /heal [player]
+    permission: shadowsmp.command.heal
+  feed:
+    description: Feed yourself or another player.
+    usage: /feed [player]
+    permission: shadowsmp.command.feed
+  invsee:
+    description: View the inventory of another player.
+    usage: /invsee <player>
+    permission: shadowsmp.command.invsee
+  staffchat:
+    description: Send a message to staff chat.
+    usage: /staffchat <message...>
+    permission: shadowsmp.command.staffchat
+  tokens:
+    description: View or pay tokens.
+    usage: /tokens [pay <player> <amount>]
+    permission: shadowsmp.command.tokens
+  gamemenu:
+    description: Open the game selector menu.
+    usage: /gamemenu
+    permission: shadowsmp.command.gamemenu
+  bedwars:
+    description: BedWars command.
+    usage: /bedwars [join|leave|list]
+    permission: shadowsmp.command.bedwars
+  skywars:
+    description: SkyWars command.
+    usage: /skywars [join|leave|list]
+    permission: shadowsmp.command.skywars
+  duel:
+    description: Challenge a player to a duel.
+    usage: /duel <player>
+    permission: shadowsmp.command.duel
+  duelaccept:
+    description: Accept a duel request.
+    usage: /duelaccept
+    permission: shadowsmp.command.duelaccept
+  gun:
+    description: Gun command.
+    usage: /gun [give|reload]
+    permission: shadowsmp.command.gun
+  vehicle:
+    description: Vehicle command.
+    usage: /vehicle [spawn|list]
+    permission: shadowsmp.command.vehicle
+permissions:
+  shadowsmp.*:
+    default: op
+    children:
+      shadowsmp.command.shadow: true
+      shadowsmp.command.spawn: true
+      shadowsmp.command.setspawn: true
+      shadowsmp.command.home: true
+      shadowsmp.command.sethome: true
+      shadowsmp.command.tpa: true
+      shadowsmp.command.tpaccept: true
+      shadowsmp.command.msg: true
+      shadowsmp.command.r: true
+      shadowsmp.command.fly: true
+      shadowsmp.command.vanish: true
+      shadowsmp.command.heal: true
+      shadowsmp.command.feed: true
+      shadowsmp.command.invsee: true
+      shadowsmp.command.staffchat: true
+      shadowsmp.command.tokens: true
+      shadowsmp.command.gamemenu: true
+      shadowsmp.command.bedwars: true
+      shadowsmp.command.skywars: true
+      shadowsmp.command.duel: true
+      shadowsmp.command.duelaccept: true
+      shadowsmp.command.gun: true
+      shadowsmp.command.vehicle: true
+      shadowsmp.staffchat.receive: true
+      shadowsmp.staff.others: true
+  shadowsmp.command.shadow:
+    default: true
+  shadowsmp.command.spawn:
+    default: true
+  shadowsmp.command.setspawn:
+    default: op
+  shadowsmp.command.home:
+    default: true
+  shadowsmp.command.sethome:
+    default: true
+  shadowsmp.command.tpa:
+    default: true
+  shadowsmp.command.tpaccept:
+    default: true
+  shadowsmp.command.msg:
+    default: true
+  shadowsmp.command.r:
+    default: true
+  shadowsmp.command.fly:
+    default: op
+  shadowsmp.command.vanish:
+    default: op
+  shadowsmp.command.heal:
+    default: op
+  shadowsmp.command.feed:
+    default: op
+  shadowsmp.command.invsee:
+    default: op
+  shadowsmp.command.staffchat:
+    default: op
+  shadowsmp.command.tokens:
+    default: true
+  shadowsmp.command.gamemenu:
+    default: true
+  shadowsmp.command.bedwars:
+    default: true
+  shadowsmp.command.skywars:
+    default: true
+  shadowsmp.command.duel:
+    default: true
+  shadowsmp.command.duelaccept:
+    default: true
+  shadowsmp.command.gun:
+    default: true
+  shadowsmp.command.vehicle:
+    default: true
+  shadowsmp.staffchat.receive:
+    default: op
+  shadowsmp.staff.others:
+    default: op

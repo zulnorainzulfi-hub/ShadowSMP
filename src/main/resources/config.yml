@@ -1,0 +1,53 @@
+spawn:
+  world: world
+  x: 0.5
+  y: 64.0
+  z: 0.5
+  yaw: 0.0
+  pitch: 0.0
+
+economy:
+  starting-tokens: 100
+  max-token-balance: 1000000
+
+messages:
+  prefix: '&8[&bShadowSMP&8]&r '
+  no-permission: '&cYou do not have permission to use that command.'
+  player-not-found: '&cPlayer not found.'
+  invalid-number: '&cInvalid number.'
+
+staff:
+  chat-prefix: '&8[&6StaffChat&8]&r'
+
+bedwars:
+  enabled: true
+  lobby-world: world
+  lobby-x: 0.5
+  lobby-y: 64.0
+  lobby-z: 0.5
+
+skywars:
+  enabled: true
+  lobby-world: world
+  lobby-x: 100.5
+  lobby-y: 64.0
+  lobby-z: 100.5
+
+duels:
+  enabled: true
+  arena-world: world
+  arena-x: 200.5
+  arena-y: 64.0
+  arena-z: 200.5
+
+guns:
+  enabled: true
+  reload-time: 1000
+  cooldown: 500
+
+vehicles:
+  enabled: true
+  types:
+    - car
+    - bike
+    - helicopter
